@@ -1,0 +1,438 @@
+{
+  "config": "{\"version\":\"5.37\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU11\",\"version\":\"5.60\",\"type\":2}},\"activeSectionIndex\":3,\"linguisticSchemaSyncVersion\":2,\"objects\":{\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU11",
+            "path": "BaseThemes/CY24SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Branch Performance",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection_BranchPerformance",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"Slicer_Branch_Name\",\"layouts\":[{\"id\":0,\"position\":{\"x\":291.76916365449335,\"y\":14.933067431135486,\"z\":1000,\"width\":250.41605384519505,\"height\":80.40882462919107}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Branches.Branch_Name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Dim_Branches\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Branch_Name\"},\"Name\":\"Dim_Branches.Branch_Name\"}]},\"objects\":{\"general\":[{\"properties\":{}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Filter Branch'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.41,
+          "width": 250.42,
+          "x": 291.77,
+          "y": 14.93,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"Slicer_City\",\"layouts\":[{\"id\":0,\"position\":{\"x\":29.86613486227097,\"y\":14.933067431135486,\"z\":0,\"width\":250.41605384519505,\"height\":80.40882462919107}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Branches.City\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Dim_Branches\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"City\"},\"Name\":\"Dim_Branches.City\"}]},\"objects\":{\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Branches\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"City\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Mumbai'\"}}]]}}}]}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Filter City'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.41,
+          "width": 250.42,
+          "x": 29.87,
+          "y": 14.93,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Branch_Name_barChart\",\"layouts\":[{\"id\":0,\"position\":{\"x\":29.86613486227097,\"y\":133.24890938551664,\"z\":5000,\"width\":609.9583696871495,\"height\":295.2152561386015}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Branches.Branch_Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Transaction Value\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Dim_Branches\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Branch_Name\"},\"Name\":\"Dim_Branches.Branch_Name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transaction Value\"},\"Name\":\"_Measures.Total Transaction Value\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Transaction Value Throughput by Branch (₹)'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 295.22,
+          "width": 609.96,
+          "x": 29.87,
+          "y": 133.25,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Branch_Name_barChart\",\"layouts\":[{\"id\":0,\"position\":{\"x\":29.86613486227097,\"y\":134.39760688021937,\"z\":5000,\"width\":599.6200922348248,\"height\":295.2152561386015}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Branches.Branch_Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Transactions\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Dim_Branches\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Branch_Name\"},\"Name\":\"Dim_Branches.Branch_Name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transactions\"},\"Name\":\"_Measures.Total Transactions\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Transaction Volume by Branch'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 295.22,
+          "width": 599.62,
+          "x": 29.87,
+          "y": 134.40,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Branch_Name_barChart\",\"layouts\":[{\"id\":0,\"position\":{\"x\":30,\"y\":400,\"z\":5000,\"width\":600,\"height\":300}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Branches.Branch_Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Fee Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Dim_Branches\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Branch_Name\"},\"Name\":\"Dim_Branches.Branch_Name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Fee Revenue\"},\"Name\":\"_Measures.Total Fee Revenue\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Fee Revenue by Branch (₹)'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 300.00,
+          "width": 600.00,
+          "x": 30.00,
+          "y": 400.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_City_columnChart\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":400,\"z\":6000,\"width\":610,\"height\":300}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Branches.City\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Transaction Value\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Dim_Branches\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"City\"},\"Name\":\"Dim_Branches.City\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transaction Value\"},\"Name\":\"_Measures.Total Transaction Value\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Value Throughput by City (₹)'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 300.00,
+          "width": 610.00,
+          "x": 640.00,
+          "y": 400.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Total_Fee_Revenue\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1020.0433752960239,\"y\":14.933067431135486,\"z\":4000,\"width\":229.73949894054593,\"height\":97.63928704973202}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Total Fee Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Fee Revenue\"},\"Name\":\"_Measures.Total Fee Revenue\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Branch Fee Revenue (₹)'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 97.64,
+          "width": 229.74,
+          "x": 1020.04,
+          "y": 14.93,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Total_Transaction_Value\",\"layouts\":[{\"id\":0,\"position\":{\"x\":779.9655989031535,\"y\":14.933067431135486,\"z\":3000,\"width\":229.73949894054593,\"height\":97.63928704973202}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Total Transaction Value\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transaction Value\"},\"Name\":\"_Measures.Total Transaction Value\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Value (₹)'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 97.64,
+          "width": 229.74,
+          "x": 779.97,
+          "y": 14.93,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Total_Transactions\",\"layouts\":[{\"id\":0,\"position\":{\"x\":550.2260999626075,\"y\":14.933067431135486,\"z\":2000,\"width\":219.40122148822135,\"height\":97.63928704973202}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Total Transactions\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transactions\"},\"Name\":\"_Measures.Total Transactions\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Transactions'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 97.64,
+          "width": 219.40,
+          "x": 550.23,
+          "y": 14.93,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Customer Analysis",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection_CustomerAnalysis",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"Slicer_Account_Type\",\"layouts\":[{\"id\":0,\"position\":{\"x\":240,\"y\":15,\"z\":1000,\"width\":200,\"height\":60}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Customers.Account_Type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Dim_Customers\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Account_Type\"},\"Name\":\"Dim_Customers.Account_Type\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Account Type'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 60.00,
+          "width": 200.00,
+          "x": 240.00,
+          "y": 15.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"Slicer_Customer_Segment\",\"layouts\":[{\"id\":0,\"position\":{\"x\":30,\"y\":15,\"z\":0,\"width\":200,\"height\":60}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Customers.Customer_Segment\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Dim_Customers\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Customer_Segment\"},\"Name\":\"Dim_Customers.Customer_Segment\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Customer Segment'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 60.00,
+          "width": 200.00,
+          "x": 30.00,
+          "y": 15.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"Slicer_Gender\",\"layouts\":[{\"id\":0,\"position\":{\"x\":450,\"y\":15,\"z\":2000,\"width\":180,\"height\":60}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Customers.Gender\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Dim_Customers\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Gender\"},\"Name\":\"Dim_Customers.Gender\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Gender'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 60.00,
+          "width": 180.00,
+          "x": 450.00,
+          "y": 15.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Account_Type_pieChart\",\"layouts\":[{\"id\":0,\"position\":{\"x\":850,\"y\":95,\"z\":7000,\"width\":400,\"height\":290}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Customers.Account_Type\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Transactions\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Dim_Customers\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Account_Type\"},\"Name\":\"Dim_Customers.Account_Type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transactions\"},\"Name\":\"_Measures.Total Transactions\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Volume by Account Type'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 290.00,
+          "width": 400.00,
+          "x": 850.00,
+          "y": 95.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Active_Customers\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":15,\"z\":3000,\"width\":290,\"height\":75}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Active Customers\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Active Customers\"},\"Name\":\"_Measures.Active Customers\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Active Customers'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 75.00,
+          "width": 290.00,
+          "x": 640.00,
+          "y": 15.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Age_Group_columnChart\",\"layouts\":[{\"id\":0,\"position\":{\"x\":30,\"y\":395,\"z\":8000,\"width\":600,\"height\":305}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Customers.Age_Group\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Transaction Value\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Dim_Customers\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Age_Group\"},\"Name\":\"Dim_Customers.Age_Group\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transaction Value\"},\"Name\":\"_Measures.Total Transaction Value\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Transaction Value by Age Group'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 305.00,
+          "width": 600.00,
+          "x": 30.00,
+          "y": 395.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Customer_Segment_barChart\",\"layouts\":[{\"id\":0,\"position\":{\"x\":440,\"y\":95,\"z\":6000,\"width\":400,\"height\":290}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Customers.Customer_Segment\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Transaction Value\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Dim_Customers\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Customer_Segment\"},\"Name\":\"Dim_Customers.Customer_Segment\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transaction Value\"},\"Name\":\"_Measures.Total Transaction Value\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Value by Customer Segment'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 290.00,
+          "width": 400.00,
+          "x": 440.00,
+          "y": 95.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Customer_Segment_pieChart\",\"layouts\":[{\"id\":0,\"position\":{\"x\":30,\"y\":95,\"z\":5000,\"width\":400,\"height\":290}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Customers.Customer_Segment\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Transactions\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Dim_Customers\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Customer_Segment\"},\"Name\":\"Dim_Customers.Customer_Segment\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transactions\"},\"Name\":\"_Measures.Total Transactions\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Volume by Customer Segment'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 290.00,
+          "width": 400.00,
+          "x": 30.00,
+          "y": 95.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Gender_barChart\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":395,\"z\":9000,\"width\":610,\"height\":305}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Customers.Gender\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Transaction Value\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Dim_Customers\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Gender\"},\"Name\":\"Dim_Customers.Gender\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transaction Value\"},\"Name\":\"_Measures.Total Transaction Value\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Transaction Value by Gender'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 305.00,
+          "width": 610.00,
+          "x": 640.00,
+          "y": 395.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Transactions_per_Customer\",\"layouts\":[{\"id\":0,\"position\":{\"x\":940,\"y\":15,\"z\":4000,\"width\":310,\"height\":75}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Transactions per Customer\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Transactions per Customer\"},\"Name\":\"_Measures.Transactions per Customer\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Avg Txns per Customer'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 75.00,
+          "width": 310.00,
+          "x": 940.00,
+          "y": 15.00,
+          "z": 4000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Executive Overview",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection_ExecutiveOverview",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"Slicer_Month_Name\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1090,\"y\":15,\"z\":1000,\"width\":160,\"height\":60}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Date.Month Name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Dim_Date\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Month Name\"},\"Name\":\"Dim_Date.Month Name\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Month'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 60.00,
+          "width": 160.00,
+          "x": 1090.00,
+          "y": 15.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"Slicer_Quarter\",\"layouts\":[{\"id\":0,\"position\":{\"x\":920,\"y\":15,\"z\":0,\"width\":160,\"height\":60}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Date.Quarter\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Dim_Date\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Quarter\"},\"Name\":\"Dim_Date.Quarter\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Quarter'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 60.00,
+          "width": 160.00,
+          "x": 920.00,
+          "y": 15.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Average_Transaction_Value\",\"layouts\":[{\"id\":0,\"position\":{\"x\":440,\"y\":85,\"z\":4000,\"width\":195,\"height\":95}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Average Transaction Value\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Average Transaction Value\"},\"Name\":\"_Measures.Average Transaction Value\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Avg Transaction Value'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 95.00,
+          "width": 195.00,
+          "x": 440.00,
+          "y": 85.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Branch_Name_barChart\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":460,\"z\":11000,\"width\":610,\"height\":240}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Branches.Branch_Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Transaction Value\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Dim_Branches\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Branch_Name\"},\"Name\":\"Dim_Branches.Branch_Name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transaction Value\"},\"Name\":\"_Measures.Total Transaction Value\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Transaction Value by Branch'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 240.00,
+          "width": 610.00,
+          "x": 640.00,
+          "y": 460.00,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Month_Name_barChart\",\"layouts\":[{\"id\":0,\"position\":{\"x\":30,\"y\":460,\"z\":10000,\"width\":600,\"height\":240}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Date.Month Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Transactions\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Dim_Date\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Month Name\"},\"Name\":\"Dim_Date.Month Name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transactions\"},\"Name\":\"_Measures.Total Transactions\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Monthly Transaction Volume'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 240.00,
+          "width": 600.00,
+          "x": 30.00,
+          "y": 460.00,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Month_Name_lineChart\",\"layouts\":[{\"id\":0,\"position\":{\"x\":30,\"y\":195,\"z\":8000,\"width\":805,\"height\":255}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Date.Month Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Transaction Value\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Dim_Date\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Month Name\"},\"Name\":\"Dim_Date.Month Name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transaction Value\"},\"Name\":\"_Measures.Total Transaction Value\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Monthly Transaction Value Trend (₹)'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 255.00,
+          "width": 805.00,
+          "x": 30.00,
+          "y": 195.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Total_Fee_Revenue\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1055,\"y\":85,\"z\":7000,\"width\":195,\"height\":95}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Total Fee Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Fee Revenue\"},\"Name\":\"_Measures.Total Fee Revenue\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Fee Revenue'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 95.00,
+          "width": 195.00,
+          "x": 1055.00,
+          "y": 85.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Total_Transaction_Value\",\"layouts\":[{\"id\":0,\"position\":{\"x\":235,\"y\":85,\"z\":3000,\"width\":195,\"height\":95}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Total Transaction Value\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transaction Value\"},\"Name\":\"_Measures.Total Transaction Value\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Value (INR)'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 95.00,
+          "width": 195.00,
+          "x": 235.00,
+          "y": 85.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Total_Transactions\",\"layouts\":[{\"id\":0,\"position\":{\"x\":30,\"y\":85,\"z\":2000,\"width\":195,\"height\":95}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Total Transactions\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transactions\"},\"Name\":\"_Measures.Total Transactions\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Transactions'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 95.00,
+          "width": 195.00,
+          "x": 30.00,
+          "y": 85.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Transaction_Failure_Rate\",\"layouts\":[{\"id\":0,\"position\":{\"x\":850,\"y\":85,\"z\":6000,\"width\":195,\"height\":95}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Transaction Failure Rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Transaction Failure Rate\"},\"Name\":\"_Measures.Transaction Failure Rate\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Failure Rate'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 95.00,
+          "width": 195.00,
+          "x": 850.00,
+          "y": 85.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Transaction_Success_Rate\",\"layouts\":[{\"id\":0,\"position\":{\"x\":645,\"y\":85,\"z\":5000,\"width\":195,\"height\":95}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Transaction Success Rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Transaction Success Rate\"},\"Name\":\"_Measures.Transaction Success Rate\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Success Rate'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 95.00,
+          "width": 195.00,
+          "x": 645.00,
+          "y": 85.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Transaction_Type_pieChart\",\"layouts\":[{\"id\":0,\"position\":{\"x\":845,\"y\":195,\"z\":9000,\"width\":405,\"height\":255}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Fact_Transactions.Transaction_Type\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Transactions\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Fact_Transactions\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Transaction_Type\"},\"Name\":\"Fact_Transactions.Transaction_Type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transactions\"},\"Name\":\"_Measures.Total Transactions\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Transaction Type Distribution'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 255.00,
+          "width": 405.00,
+          "x": 845.00,
+          "y": 195.00,
+          "z": 9000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Transaction Analysis",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection_TransactionAnalysis",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"Slicer_Channel\",\"layouts\":[{\"id\":0,\"position\":{\"x\":220,\"y\":15,\"z\":1000,\"width\":180,\"height\":60}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact_Transactions.Channel\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Fact_Transactions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Channel\"},\"Name\":\"Fact_Transactions.Channel\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Channel'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 60.00,
+          "width": 180.00,
+          "x": 220.00,
+          "y": 15.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"Slicer_Status\",\"layouts\":[{\"id\":0,\"position\":{\"x\":410,\"y\":15,\"z\":2000,\"width\":180,\"height\":60}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact_Transactions.Status\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Fact_Transactions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Status\"},\"Name\":\"Fact_Transactions.Status\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Status'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 60.00,
+          "width": 180.00,
+          "x": 410.00,
+          "y": 15.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"Slicer_Transaction_Type\",\"layouts\":[{\"id\":0,\"position\":{\"x\":30,\"y\":15,\"z\":0,\"width\":180,\"height\":60}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact_Transactions.Transaction_Type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Fact_Transactions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Transaction_Type\"},\"Name\":\"Fact_Transactions.Transaction_Type\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Transaction Type'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 60.00,
+          "width": 180.00,
+          "x": 30.00,
+          "y": 15.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Channel_barChart\",\"layouts\":[{\"id\":0,\"position\":{\"x\":435,\"y\":380,\"z\":8000,\"width\":395,\"height\":320}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Fact_Transactions.Channel\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Transactions\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Fact_Transactions\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Channel\"},\"Name\":\"Fact_Transactions.Channel\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transactions\"},\"Name\":\"_Measures.Total Transactions\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Volume by Channel'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 320.00,
+          "width": 395.00,
+          "x": 435.00,
+          "y": 380.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Day_Name_columnChart\",\"layouts\":[{\"id\":0,\"position\":{\"x\":840,\"y\":380,\"z\":9000,\"width\":410,\"height\":320}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Date.Day Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Transactions\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Dim_Date\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Day Name\"},\"Name\":\"Dim_Date.Day Name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transactions\"},\"Name\":\"_Measures.Total Transactions\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Transaction Volume by Day of Week'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 320.00,
+          "width": 410.00,
+          "x": 840.00,
+          "y": 380.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Month_Name_areaChart\",\"layouts\":[{\"id\":0,\"position\":{\"x\":30,\"y\":100,\"z\":6000,\"width\":1220,\"height\":270}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Date.Month Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Transaction Value\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Dim_Date\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Month Name\"},\"Name\":\"Dim_Date.Month Name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transaction Value\"},\"Name\":\"_Measures.Total Transaction Value\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Monthly Value Trend Throughput'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 270.00,
+          "width": 1220.00,
+          "x": 30.00,
+          "y": 100.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Total_Transaction_Value\",\"layouts\":[{\"id\":0,\"position\":{\"x\":815,\"y\":15,\"z\":4000,\"width\":215,\"height\":75}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Total Transaction Value\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transaction Value\"},\"Name\":\"_Measures.Total Transaction Value\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Filtered Value (₹)'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 75.00,
+          "width": 215.00,
+          "x": 815.00,
+          "y": 15.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Total_Transactions\",\"layouts\":[{\"id\":0,\"position\":{\"x\":600,\"y\":15,\"z\":3000,\"width\":205,\"height\":75}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Total Transactions\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transactions\"},\"Name\":\"_Measures.Total Transactions\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Filtered Transactions'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 75.00,
+          "width": 205.00,
+          "x": 600.00,
+          "y": 15.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Transaction_Failure_Rate\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1040,\"y\":15,\"z\":5000,\"width\":210,\"height\":75}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Transaction Failure Rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Transaction Failure Rate\"},\"Name\":\"_Measures.Transaction Failure Rate\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Channel Failure Rate'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 75.00,
+          "width": 210.00,
+          "x": 1040.00,
+          "y": 15.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"Visual_Transaction_Type_barChart\",\"layouts\":[{\"id\":0,\"position\":{\"x\":30,\"y\":380,\"z\":7000,\"width\":395,\"height\":320}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Fact_Transactions.Transaction_Type\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Transactions\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Fact_Transactions\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Transaction_Type\"},\"Name\":\"Fact_Transactions.Transaction_Type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Transactions\"},\"Name\":\"_Measures.Total Transactions\"}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Volume by Transaction Type'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 320.00,
+          "width": 395.00,
+          "x": 30.00,
+          "y": 380.00,
+          "z": 7000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
