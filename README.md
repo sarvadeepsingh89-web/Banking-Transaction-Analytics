@@ -311,5 +311,5 @@ When opening the project on another computer, the data-source paths may need to 
 B.Sc. Data Science  
 Mumbai, Maharashtra
 
-**GitHub:** github.com/sarvadeepsingh89-web  
-**LinkedIn:** linkedin.com/in/sarvadeep-singh
+**GitHub:** [github.com/sarvadeepsingh89-web ](https://github.com/sarvadeepsingh89-web) 
+**LinkedIn:** [linkedin.com/in/sarvadeep-singh](https://www.linkedin.com/in/sarvadeep-singh/)
